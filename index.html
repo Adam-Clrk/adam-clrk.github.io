@@ -11,31 +11,33 @@
       text-align: center;
     }
     div.container {
-      display: block;
+      /*display: block;
       margin: auto;
       display: table;
-      display: inline-block;
+      display: inline-block;*/
       margin: 20px 0;
     }
-    h1 {
+    h1,h2,h3 {
       font-family: 'Titillium Web', sans-serif;
       font-weight: 400;
+    }
+    h1 {
       margin: auto;
       font-size: 40px;
       margin: 20px 0;
     }
-    div.container ul {
+    nav.buttons ul {
       margin: 0;
       padding: 0;
     }
-    div.container li {
+    nav.buttons li {
       font-family: 'Roboto', sans-serif;
       list-style-type: none;
       display: inline;
       margin: 0;
       padding: 0;
     }
-    div.container li a {
+    nav.buttons li a {
       text-decoration: none;
       color: #FFFFFF;
       background-color: #03a9f4;
@@ -46,17 +48,30 @@
       margin: 0 5px;
       transition: background-color .2s;
     }
-    div.container li a:hover {
+    nav.buttons li a:hover {
       background-color: #0288d1;
     }
     </style>
   </head>
   <body>
     <div class="container">
+      <header>
       <h1>adam-clrk.github.io</h1>
-      <ul class="buttons">
-        <li><a href="https://github.com/adam-clrk">github</a></li>
-      </ul>
+      <nav class="buttons">
+        <ul>
+          <li><a href="https://github.com/adam-clrk">github</a></li>
+        </ul>
+      </nav>
+      </header>
+      <h2>Projects</h2>
+
+      <section>
+        <h3>DofE Project</h3>
+      </section>
+      <section>
+        <h3>FrogOS</h3>
+      </section>
+      
     </div>
   </body>
 </html>
