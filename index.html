@@ -2,76 +2,86 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>adam-clrk.github.io</title>
-    <link href="https://fonts.googleapis.com/css?family=Roboto|Titillium+Web" rel="stylesheet">
-    <style media="screen">
-    body {
-      padding: 0;
-      margin: 0;
-      text-align: center;
-    }
-    div.container {
-      /*display: block;
-      margin: auto;
-      display: table;
-      display: inline-block;*/
-      margin: 20px 0;
-    }
-    h1,h2,h3 {
-      font-family: 'Titillium Web', sans-serif;
-      font-weight: 400;
-    }
-    h1 {
-      margin: auto;
-      font-size: 40px;
-      margin: 20px 0;
-    }
-    nav.buttons ul {
-      margin: 0;
-      padding: 0;
-    }
-    nav.buttons li {
-      font-family: 'Roboto', sans-serif;
-      list-style-type: none;
-      display: inline;
-      margin: 0;
-      padding: 0;
-    }
-    nav.buttons li a {
-      text-decoration: none;
-      color: #FFFFFF;
-      background-color: #03a9f4;
-      padding: 10px 25px;
-      border-radius: 20px;
-      overflow: hidden;
-      color: #FFF;
-      margin: 0 5px;
-      transition: background-color .2s;
-    }
-    nav.buttons li a:hover {
-      background-color: #0288d1;
-    }
-    </style>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500|Titillium+Web:600" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
   </head>
   <body>
-    <div class="container">
-      <header>
-      <h1>adam-clrk.github.io</h1>
-      <nav class="buttons">
-        <ul>
-          <li><a href="https://github.com/adam-clrk">github</a></li>
-        </ul>
-      </nav>
-      </header>
-      <h2>Projects</h2>
+    <header>
+    <h1>adam-clrk.github.io</h1>
+    <nav>
+      <ul class="buttons">
+        <li><a href="https://github.com/adam-clrk">github profile</a></li>
+      </ul>
+    </nav>
+    </header>
+    <main>
+      <section class="image dofe">
+        <div>
+          <h2>DofE Project</h2>
+          <div class="infocontainer">
+            <div class="info">
+              <p>Material design webapp for DofE expidition group project. Displays photos from expidition and their respective captions in  a responsive format.
+              </p>
+              <p class="lang">Written in HTML and JS (with Vue.js and vue-material)</p>
+            </div>
+            <div class="images">
+              <img src="/img/dofe_(iPhone 6 Plus).png" alt="Screenshot in portrait on iPhone 6 Plus">
+              <img src="/img/dofe_(iPad).png" alt="Screenshot in landscape on iPad">
+            </div>
+          </div>
 
-      <section>
-        <h3>DofE Project</h3>
+          <ul class="buttons small">
+            <li><a href="https://adam-clrk.github.io/DofE">website</a></li>
+            <li><a href="https://github.com/Adam-Clrk/DofE">source code</a></li>
+          </ul>
+        </div>
       </section>
       <section>
-        <h3>FrogOS</h3>
+        <div>
+          <h2>FrogOS Timetable</h2>
+          <p>Fetches timetable data from School VLE (FrogOS) api and presents data in suitable format for printing
+          </p>
+          <p class="lang">Written in HTML and JS (jQuery and rivets.js)</p>
+          <ul class="buttons small">
+            <li><a href="https://github.com/Adam-Clrk/FrogOS-timetable">source code</a></li>
+          </ul>
+        </div>
       </section>
-      
-    </div>
+      <section>
+        <div>
+          <h2>BOT Rock</h2>
+          <p>Multi-purpose discord bot with guild/bot data api. interacts with the Discord API.
+          </p>
+          <ul class="list">
+            <li>banned word blacklist</li>
+            <li>Auto-translate mandarin characters via Google translate api</li>
+            <li>get random reddit post command (from reddit api)</li>
+            <li>http api with permission sytem</li>
+            <li>web interface that interacts with http api</li>
+          </ul>
+          <p class="lang">Discord bot written in NodeJS (discord.js)</p>
+          <p class="lang">Web admin interface written in HTML and JS (Vue.js)</p>
+        </div>
+      </section>
+      <section>
+      <div>
+        <h2></h2>
+        <img src="placeholder.jpg" alt="screenshot">
+        <p>
+        </p>
+        <p class="lang"></p>
+        <ul class="buttons small">
+          <li><a href="https://adam-clrk.github.io/"></a></li>
+        </ul>
+        </div>
+      </section>
+    </main>
   </body>
+  <script src="script.js"></script>
 </html>
