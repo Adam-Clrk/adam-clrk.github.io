@@ -6,13 +6,13 @@ body {
   margin: auto;
 }
 
-/** {
+/* * {
   -webkit-transition: all 0.2s ease;
   -moz-transition: all 0.2s ease;
   -ms-transition: all 0.2s ease;
   -o-transition: all 0.2s ease;
   transition: all 0.2s ease;
-}*/
+} */
 header {
   text-align: center
 }
@@ -121,21 +121,19 @@ section img {
 }
 section.image p, section.image ul.list {
   color: black;
-  opacity: 1;
-  transition: opacity 1s, color 1s;
   background: white;
+  opacity: 1;
+  list-style-position: inside;
   padding: 7px;
   border-radius: 3px;
+  transition: opacity 1s, color 1s;
 }
 section.image div:hover p, section.image div:hover ul.list {
   background-color: white;
   color: black;
 }
-
-
 section.image>div::after {
   content: "";
-  background: url(http://img.dofe.adam.uk.eu.org/flora/preview/20170722_115427.jpg) no-repeat center/cover;
   transition: opacity 1s;
   opacity: 0;
   top: 0;
@@ -153,6 +151,14 @@ section.image>div p, section.image>div a, section.image>div img {
 }
 section.image>div:hover p, section.image>div:hover a, section.image>div:hover img{
   box-shadow: 0 10px 20px rgba(0,0,0,0.19);
+}
+.image.dofe>div::after {
+  background: url(http://img.dofe.adam.uk.eu.org/flora/preview/20170722_115427.jpg) center/cover no-repeat;
+}
+.image.discord>div::after {
+  background: #2C2F33 url(img/discord.jpg) center/cover repeat; /* https://discordapp.com/branding */
+  background-image: url(img/discord.webp);
+  /*filter: invert(100%);*/
 }
 /*
 @keyframes fadeoutin {
