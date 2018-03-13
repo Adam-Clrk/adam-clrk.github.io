@@ -98,7 +98,7 @@ section>div {
   box-shadow: 0 10px 20px rgba(0,0,0,0.19);
 }
 section.dofe>div {
-  /*background: url(http://img.dofe.adam.uk.eu.org/flora/preview/20170722_115427.jpg) no-repeat center/cover;*/
+  /*background: url(https://img.dofe.adam.uk.eu.org/flora/preview/20170722_115427.jpg) no-repeat center/cover;*/
 }
 
 section p, section ul.list, section ul.buttons{
@@ -153,7 +153,7 @@ section.image>div:hover p, section.image>div:hover a, section.image>div:hover im
   box-shadow: 0 10px 20px rgba(0,0,0,0.19);
 }
 .image.dofe>div::after {
-  background: url(http://img.dofe.adam.uk.eu.org/flora/preview/20170722_115427.jpg) center/cover no-repeat;
+  background: url(https://img.dofe.adam.uk.eu.org/flora/preview/20170722_115427.jpg) center/cover no-repeat;
 }
 .image.discord>div::after {
   background: #2C2F33 url(img/discord.jpg) center/cover repeat; /* https://discordapp.com/branding */
