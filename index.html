@@ -21,40 +21,27 @@
     </nav>
     </header>
     <main>
+      <div>
       <section class="image dofe">
-        <div>
+        <div class="info">
           <h2>DofE Project</h2>
-          <div class="infocontainer">
-            <div class="info">
-              <p>Material design webapp for DofE expidition group project. Displays photos from expidition and their respective captions in  a responsive format.
-              </p>
-              <p class="lang">Written in HTML and JS (with Vue.js and vue-material)</p>
-            </div>
-            <div class="images">
-              <img src="/img/dofe_(iPhone 6 Plus).png" alt="Screenshot in portrait on iPhone 6 Plus">
-              <img src="/img/dofe_(iPad).png" alt="Screenshot in landscape on iPad">
-            </div>
-          </div>
-
+          <p>Material design webapp for DofE expidition group project. Displays photos from expidition and their respective captions in  a responsive format.
+          </p>
+          <p class="lang">Written in HTML and JS (with Vue.js and vue-material)</p>
           <ul class="buttons small">
             <li><a href="https://adam-clrk.github.io/DofE">website</a></li>
             <li><a href="https://github.com/Adam-Clrk/DofE">source code</a></li>
           </ul>
+        <!--
+        <div class="images">
+          <div><img src="/img/dofe_(iPad).webp" alt="Screenshot in landscape on iPad"></div>
+          <div><img src="/img/dofe_(iPhone 6 Plus).webp" alt="Screenshot in portrait on iPhone 6 Plus"></div>
+        </div>-->
         </div>
       </section>
-      <section>
-        <div>
-          <h2>FrogOS Timetable</h2>
-          <p>Fetches timetable data from School VLE (FrogOS) api and presents data in suitable format for printing
-          </p>
-          <p class="lang">Written in HTML and JS (jQuery and rivets.js)</p>
-          <ul class="buttons small">
-            <li><a href="https://github.com/Adam-Clrk/FrogOS-timetable">source code</a></li>
-          </ul>
-        </div>
-      </section>
+
       <section class="image discord">
-        <div>
+        <div class="info">
           <h2>BOT Rock</h2>
           <p>Multi-purpose discord bot with guild/bot data api. interacts with the Discord API.
           </p>
@@ -69,19 +56,43 @@
           <p class="lang">Web admin interface written in HTML and JS (Vue.js)</p>
         </div>
       </section>
-      <section>
-      <div>
-        <h2></h2>
-        <img src="placeholder.jpg" alt="screenshot">
-        <p>
-        </p>
-        <p class="lang"></p>
-        <ul class="buttons small">
-          <li><a href="https://adam-clrk.github.io/"></a></li>
-        </ul>
+      <section class="image">
+        <div class="info">
+          <h2>Discord Rolebot</h2>
+          <p>Discord bot that assigns a role to a user when they add a reaction to a specific message.
+          </p>
+          <p class="lang">Discord bot written in <a href="https://golang.org/">GO</a> (discordgo)</p>
+        </div>
+      </section>
+      </div>
+      <section class="other">
+        <h2>Other Projects</h2>
+        <div>
+          <div>
+            <section>
+              <h3>FrogOS Timetable</h3>
+              <p>Fetches timetable data from School VLE (FrogOS) api and presents data in suitable format for printing
+              </p>
+              <p class="lang">Written in HTML and JS (jQuery and rivets.js)</p>
+              <ul class="buttons small">
+                <li><a href="https://github.com/Adam-Clrk/FrogOS-timetable">source code</a></li>
+              </ul>
+            </section>
+          </div>
+          <div>
+            <section>
+              <h3>FrogOS Dark Theme</h3>
+              <p></p>
+              <p class="lang">Written in HTML and JS (jQuery and rivets.js)</p>
+              <ul class="buttons small">
+                <li><a href="https://github.com/Adam-Clrk/FrogOS-Dark-Theme">source code</a></li>
+              </ul>
+            </section>
+          </div>
         </div>
       </section>
     </main>
   </body>
   <script src="script.js"></script>
+  <script src="https://cdn.rawgit.com/ckrack/scrollsnap-polyfill/develop/dist/scrollsnap-polyfill.bundled.js"></script>
 </html>

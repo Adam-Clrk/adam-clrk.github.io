@@ -1,0 +1,36 @@
+.image.dofe {
+  background-image: url(img/dofe-2176.jpg);
+}
+
+section.image {
+  background-position-x: center;
+  background-position-y: 20%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: initial;
+  background-origin: initial;
+  background-clip: initial;
+  background-color: rgb(44, 47, 51);
+}
+section.image .info {
+  background: white;
+  padding: 8px;
+}
+
+@media (max-width: 650px) {
+  .image.dofe {
+    background-image: url(img/dofe-650.jpg);
+  }
+}
+@media (max-width: 1920px) {
+  .image.dofe {
+    background-image: url(img/dofe-1920.jpg);
+  }
+}
+
+.image.discord {
+  background-repeat: repeat;
+  background-color: #2C2F33;
+  background-image: url(img/discord.jpg); /* https://discordapp.com/branding */
+  background-size: 320px;
+}

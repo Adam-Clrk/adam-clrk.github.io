@@ -1,0 +1,30 @@
+ul.buttons {
+  margin: 0;
+  padding: 0;
+}
+ul.buttons li {
+  list-style-type: none;
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+}
+ul.buttons li a {
+  display: inline-block;
+  text-decoration: none;
+  margin: 0 5px;
+  padding: 10px 25px;
+  border-radius: 20px;
+  overflow: hidden;
+  font-weight: 500;
+  color: #FFFFFF;
+  background-color: #03a9f4;
+  transition: background-color .4s, box-shadow 1s;
+}
+ul.buttons li a:hover, ul.buttons li a:active {
+  background-color: #027dc0;
+}
+ul.buttons.small li a {
+  margin: 0 2.5px;
+  padding: 5px 12.5px;
+  font-size: 15px
+}

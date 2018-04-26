@@ -1,24 +1,31 @@
+@import url("buttons.css");
+@import url("layout.css");
+@import url("bg.css");
+
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+/** {
+  transition: all 1s;
+}*/
 body {
   padding: 0;
   margin: 0;
   font-family: 'Roboto', sans-serif;
-  max-width: 1920px;
+  max-width: 1560px;
   margin: auto;
+  scroll-snap-type: mandatory;
 }
 
-/* * {
-  -webkit-transition: all 0.2s ease;
-  -moz-transition: all 0.2s ease;
-  -ms-transition: all 0.2s ease;
-  -o-transition: all 0.2s ease;
-  transition: all 0.2s ease;
-} */
 header {
-  text-align: center
+  text-align: center;
+  margin-bottom: 20px;
 }
 h1,h2,h3 {
   font-family: 'Titillium Web', sans-serif;
-  text-align: center;
   margin: auto;
   font-weight: 200;
 }
@@ -27,212 +34,22 @@ h1 {
   margin: 20px 0;
 }
 h2 {
-  font-size: 22px;
-  transition: font-size 2s ease;
-  transition-delay: .5s;
+  font-size: 44px;
 }
 h3 {
   font-weight: 600;
   margin: 10px 0;
 }
-/*===button styles===*/
-ul.buttons {
-  margin: 0;
-  padding: 0;
-}
-ul.buttons li {
-  list-style-type: none;
-  display: inline-block;
-  margin: 0;
-  padding: 0;
-}
-ul.buttons li a {
-  display: inline-block;
-  text-decoration: none;
-  margin: 0 5px;
-  padding: 10px 25px;
-  border-radius: 20px;
-  overflow: hidden;
-  font-weight: 500;
-  color: #FFFFFF;
-  background-color: #03a9f4;
-  transition: background-color .4s, box-shadow 1s;
-}
-ul.buttons li a:hover, ul.buttons li a:active {
-  background-color: #027dc0;
-}
-ul.buttons.small li a {
-  margin: 0 2.5px;
-  padding: 5px 12.5px;
-  font-size: 15px
-}
-/*===end button styles===*/
+
 main {
-  /*font-size: 0;*/
-  display: flex;
-  flex-wrap: wrap;
-}
-section {
-  width: 33.33%;
-  padding: 0;
-  margin: 0;
-  font-size: 16px;
-}
-@media (max-width: 1024px) {
-  section {
-    width: 50%
-  }
-}
-/*425*/
-@media (max-width: 650px) {
-  section {
-    width: 100%
-  }
-}
-section>div {
-  position: relative;
-  border: 1px solid;
-  border-radius: 10px;
-  padding: 10px;
-  margin: 10px;
-  box-shadow: 0 10px 20px rgba(0,0,0,0.19);
-}
-section.dofe>div {
-  /*background: url(http://img.dofe.adam.uk.eu.org/flora/preview/20170722_115427.jpg) no-repeat center/cover;*/
+  scroll-snap-type: mandatory;
 }
 
-section p, section ul.list, section ul.buttons{
+section p, section ul.list, section ul.buttons {
   font-weight: 300;
   margin: 10px 0;
 }
-.lang {
+p.lang {
   font-weight: 500;
   font-size: 14px;
-  margin: 8px 0;
 }
-
-section img {
-  overflow: hidden;
-  height: 8.5em;
-  /*float: right;*/
-  display: inline-block;
-  /*clear: both;*/
-  margin: 10px 0;
-}
-section.image p, section.image ul.list {
-  color: black;
-  background: white;
-  opacity: 1;
-  list-style-position: inside;
-  padding: 7px;
-  border-radius: 3px;
-  transition: opacity 1s, color 1s;
-}
-section.image div:hover p, section.image div:hover ul.list {
-  background-color: white;
-  color: black;
-}
-section.image>div::after {
-  content: "";
-  transition: opacity 1s;
-  opacity: 0;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  position: absolute;
-  z-index: -1;
-}
-section.image>div:hover::after {
-  opacity: 1;
-}
-section.image>div p, section.image>div a, section.image>div img {
-  transition: box-shadow 1s;
-}
-section.image>div:hover p, section.image>div:hover a, section.image>div:hover img{
-  box-shadow: 0 10px 20px rgba(0,0,0,0.19);
-}
-.image.dofe>div::after {
-  background: url(http://img.dofe.adam.uk.eu.org/flora/preview/20170722_115427.jpg) center/cover no-repeat;
-}
-.image.discord>div::after {
-  background: #2C2F33 url(img/discord.jpg) center/cover repeat; /* https://discordapp.com/branding */
-  background-image: url(img/discord.webp);
-  /*filter: invert(100%);*/
-}
-/*
-@keyframes fadeoutin {
-  0%   {
-    opacity: 1;
-  }
-  10%  {
-    opacity: 0;
-  }
-  90%  {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-section ~ section {
-  transition: opacity .5s ease;
-}
-section.modal ~ section {
-  opacity: 0;
-}
-section.modal {
-  display: block;
-  /*position: fixed;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  z-index: 100;
-  background: white;
-}
-section.modal, section.closemodal {
-  transition: width 2s ease, height 2s ease, top 2s ease, left 2s ease, position 2s ease;
-  transition-delay: .5s;
-}
-section.modal>div {
-  border: 1px solid;
-  border-radius: 10px;
-  padding: 10px;
-  margin: 10px;
-  box-shadow: 0 10px 20px rgba(0,0,0,0.19);
-}
-section.modal h2 {
-  font-size: 30px;
-}
-section.modal div.infocontainer,
-section.modal div.buttons {
-  /*transition: all 2s ease;
-  transition-delay: .5s;
-  animation-name: fadeoutin;
-  animation-duration: 2s;
-  animation-delay: .5s;
-
-  /* display: none;
-}
-section.modal div.infocontainer {
-  display: flex;
-}
-section.modal div.infocontainer>div {
-  width: 50%;
-}
-section.modal .info {
-  width: 50%;
-}
-section.modal .images {
-  width: 50%;
-}
-section.modal img {
-  overflow: hidden;
-  height: 8.5em;
-  /*float: right;
-  display: inline-block;
-  /*clear: both;
-  margin: 0;
-}*/
