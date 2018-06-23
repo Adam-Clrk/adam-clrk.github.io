@@ -16,9 +16,9 @@ ul.buttons li a {
   border-radius: 20px;
   overflow: hidden;
   font-weight: 500;
-  color: #FFFFFF;
+  color: #fff;
   background-color: #03a9f4;
-  transition: background-color .4s, box-shadow 1s;
+  transition: background-color .4s;
 }
 ul.buttons li a:hover, ul.buttons li a:active {
   background-color: #027dc0;
@@ -26,5 +26,23 @@ ul.buttons li a:hover, ul.buttons li a:active {
 ul.buttons.small li a {
   margin: 0 2.5px;
   padding: 5px 12.5px;
-  font-size: 15px
+  font-size: 0.94em;
+}
+
+
+/* nav buttons */
+header nav {
+  position: fixed;
+  top: 0;
+  right: 1px;
+}
+header nav ul.buttons li {
+  vertical-align: top;
+}
+header nav ul.buttons li a {
+  border-radius: 0 0 20px 20px;
+  margin: 0 0.5px;
+  top: 0;
+  vertical-align: bottom;
+  min-height: 0;
 }

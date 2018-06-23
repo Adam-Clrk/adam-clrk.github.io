@@ -1,48 +1,45 @@
 @import url("buttons.css");
 @import url("layout.css");
-@import url("bg.css");
 
 html {
   box-sizing: border-box;
 }
 *, *:before, *:after {
   box-sizing: inherit;
+  font-family: inherit;
 }
-/** {
-  transition: all 1s;
-}*/
+
 body {
   padding: 0;
   margin: 0;
   font-family: 'Roboto', sans-serif;
-  max-width: 1560px;
-  margin: auto;
   scroll-snap-type: mandatory;
+  background: #ececec;
 }
 
 header {
   text-align: center;
   margin-bottom: 20px;
 }
-h1,h2,h3 {
+
+h1,h2,h3,header small {
   font-family: 'Titillium Web', sans-serif;
   margin: auto;
   font-weight: 200;
 }
 h1 {
-  font-size: 40px;
-  margin: 20px 0;
+  font-size: 2.5em;
+  margin: 40px 0 0 0;
 }
 h2 {
-  font-size: 44px;
+  font-size: 2.4em;
 }
 h3 {
   font-weight: 600;
   margin: 10px 0;
 }
-
-main {
-  scroll-snap-type: mandatory;
+header small {
+  font-size: 1em;
 }
 
 section p, section ul.list, section ul.buttons {
@@ -51,5 +48,5 @@ section p, section ul.list, section ul.buttons {
 }
 p.lang {
   font-weight: 500;
-  font-size: 14px;
+  font-size: 0.875em;
 }
