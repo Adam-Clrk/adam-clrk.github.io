@@ -1,51 +1,132 @@
-@import url("buttons.css");
-@import url("layout.css");
-
 html {
   box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
 }
-*, *:before, *:after {
+html, body {
+  padding: 0;
+  margin: 0;
+  background: #ececec;
+}
+*, *::before, *::after {
   box-sizing: inherit;
   font-family: inherit;
 }
-
-body {
-  padding: 0;
+*::before, *::after {
   margin: 0;
-  font-family: 'Roboto', sans-serif;
-  background: #ececec;
+  padding: 0;
+  display: block;
 }
 
-header {
-  text-align: center;
-  margin-bottom: 20px;
-}
-
-h1,h2,h3,header small {
+h1,h2,h3 {
+  font-weight: 600;
   font-family: 'Titillium Web', sans-serif;
-  margin: auto;
-  font-weight: 200;
 }
 h1 {
-  font-size: 2.5em;
-  margin: 40px 0 0 0;
+  font-size: 2.5rem;
+  min-height: 1.5em;
+}
+.subtitle {
+  font-size: 1.5rem;
 }
 h2 {
-  font-size: 2.4em;
-}
-h3 {
-  font-weight: 600;
-  margin: 10px 0;
-}
-header small {
-  font-size: 1em;
+  font-size: 2.4rem;
 }
 
-section p, section ul.list, section ul.buttons {
-  font-weight: 300;
-  margin: 10px 0;
+/*
+ * Header Container
+ */
+header {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
 }
-p.lang {
-  font-weight: 500;
-  font-size: 0.875em;
+
+/*
+ * Scroll down indicator
+ */
+@keyframes bounce {
+  from {
+    transform: translateY(0em) rotate(45deg);
+  }
+  to {
+    transform: translateY(-0.5em) rotate(45deg);
+  }
+}
+/* @media screen and (min-height: 400px) {
+  header::after {
+    content: '';
+    position: absolute;
+    bottom: 2em;
+
+    width: 3em;
+    height: 3em;
+    max-width: 7vh;
+    max-height: 7vh;
+
+    border-bottom: 4px solid;
+    border-right: 4px solid;
+
+    transform: rotate(45deg);
+    animation: 0.6s ease-in-out infinite alternate bounce;
+  }
+} */
+
+/*
+ * Nav Buttons
+ */
+ nav::after {
+  content: attr(data-tooltip);
+  transition: opacity 0.4s;
+  opacity: 0;
+  min-height: 1.2em;
+}
+nav.tooltip::after {
+  opacity: 1;
+}
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+nav ul li {
+  display: block;
+  vertical-align: top;
+  list-style-type: none;
+  margin: 0.4em;
+}
+nav ul li a {
+  display: block;
+  margin: 0;
+  padding: 0.6em;
+  border-radius: 100%;
+  font-size: 1.3em;
+  text-decoration: none;
+  overflow: hidden;
+  color: #FFFFFF;
+  background-color: #03A9F4;
+  transition: background-color 0.4s;
+}
+nav ul li a:hover, nav ul li a:focus {
+  background-color: #027DC0;
+}
+nav ul li a img {
+  display: block;
+  width: 2em;
+  height: 2em;
+  filter: invert(1);
+}
+
+/*
+ * Night mode
+ */
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #131313;
+    color:white;
+  }
 }

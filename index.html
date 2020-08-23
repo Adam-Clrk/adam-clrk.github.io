@@ -1,109 +1,58 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-GB">
 <head>
   <meta name="google-site-verification" content="Oi3blhwFU6jggftB5_UMYs49qjMtRGwqobK2KsZJZl0" />
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="referrer" content="no-referrer">
+  <link rel="canonical" href="https://adam-clrk.github.io/">
+  <meta name="theme-color" content="#131313">
   <title>adam-clrk.github.io</title>
-  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500|Titillium+Web:600" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-  <header>
-    <nav>
-      <ul class="buttons">
-        <li class="github"><a href="https://github.com/adam-clrk">Github Profile</a></li>
-        <li class="self"><a href="https://gitlab.com/Adam-Clrk">Gitlab Profile</a></li>
-      </ul>
-    </nav>
-    <h1>adam-clrk.github.io</h1>
-    <small>Adam Clarke</small>
-  </header>
-  <main>
-    <section>
-      <h2>K-Means clustering</h2>
-      <div class="info">
-        <p>2-dimensional demonstration of K-means clustering (Lloyd's algorithm)
-        </p>
-        <p class="lang">HTML, CSS, JS (jQuery, Chart.js) </p>
-        <ul class="buttons small">
-          <li><a href="https://adam-clrk.github.io/kMeans/">Website</a></li>
-          <li><a href="https://github.com/Adam-Clrk/kMeans/">Source code</a></li>
-        </ul>
-      </div>
-    </section>
-    <section class="image dofe">
-      <h2>DofE Project</h2>
-      <div class="info">
-        <p>Material design webapp for DofE expidition group project. Displays photos from expidition and their respective captions in  a responsive format.
-        </p>
-        <p class="lang">HTML, JS (Vue.js, vue-material)</p>
-        <ul class="buttons small">
-          <li><a href="https://adam-clrk.github.io/DofE">Website</a></li>
-          <li><a href="https://github.com/Adam-Clrk/DofE">Source code</a></li>
-        </ul>
-        <!--<div class="images">
-        <div><img src="/img/dofe_(iPad).webp" alt="Screenshot in landscape on iPad"></div>
-        <div><img src="/img/dofe_(iPhone 6 Plus).webp" alt="Screenshot in portrait on iPhone 6 Plus"></div>
-      </div>-->
-    </div>
-  </section>
-  <section>
-    <h2>BOT Rock</h2>
-    <div class="info">
-      <p>Multi-purpose discord bot with guild/bot data api. Interacts with the Discord API.
-      </p>
-      <ul class="list">
-        <li>Banned word blacklist</li>
-        <li>Auto-translate via Google translate api</li>
-        <li>get random reddit post command (from reddit api)</li>
-        <li>http REST api with permission sytem</li>
-        <li>web admin interface (interacts with http api)</li>
-        <li>votekick system</li>
-        <li>"starboard" message pinning system</li>
-      </ul>
-      <p class="lang">Discord bot: Typescript (NodeJS + Discord.js)</p>
-      <p class="lang">Web admin interface: HTML, JS (Vue.js)</p>
-      <ul class="buttons small">
-        <li><a href="https://git.adam.uk.eu.org/adam/discord-bot">Repository (private source code)</a></li>
-      </ul>
 
-    </div>
-  </section>
-  <section>
-    <h2>Discord Rolebot</h2>
-    <div class="info">
-      <p>Discord bot that enables users to give themselves specific roles easily, especially for people to assign their own colours.
-      </p>
-      <p class="lang"><a href="https://golang.org/">GO</a> (discordgo)</p>
-      <ul class="buttons small">
-        <li><a href="https://github.com/Adam-Clrk/rolebot">Source code</a></li>
-        <li><a href="https://github.com/Adam-Clrk/rolebot/releases/">Download</a></li>
-      </ul>
-    </div>
-  </section>
-  <!--<section class="other">
-    <h2>Other Projects</h2>
-    <div>
-      <!--<section class="info">
-        <h3>FrogOS Timetable</h3>
-        <p>Fetches timetable data from School VLE (FrogOS) api and presents data in suitable format for printing
-        </p>
-        <p class="lang">Written in HTML and JS (jQuery and rivets.js)</p>
-        <ul class="buttons small">
-          <li><a href="https://github.com/Adam-Clrk/FrogOS-timetable">Source code</a></li>
-        </ul>
-      </section> ->
-      <section class="info">
-        <h3>FrogOS Dark Theme</h3>
-        <p></p>
-        <p class="lang">Written in HTML and JS (jQuery and rivets.js)</p>
-        <ul class="buttons small">
-          <li><a href="https://github.com/Adam-Clrk/FrogOS-Dark-Theme">Source code</a></li>
-        </ul>
-      </section>
-    </div>
-  </section>-->
-</main>
+  <link rel="stylesheet" href="styles.css">
+  
+  <!-- <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500|Titillium+Web:600" rel="stylesheet"> -->
+  <link rel="stylesheet" href="fonts.css">
+</head>
+
+<body>
+<header>
+  <h1>Adam Clarke</h1>
+  <p class="subtitle" role="doc-subtitle">adam-clrk.github.io</p>
+  <nav data-tooltip="">
+    <ul>
+      <li>
+        <a href="https://github.com/Adam-Clrk">
+          <img src="https://cdn.jsdelivr.net/npm/@mdi/svg@latest/svg/github.svg" alt="Github">
+        </a>
+      </li>
+      <li>
+        <a href="https://gitlab.com/Adam-Clrk">
+          <img src="https://cdn.jsdelivr.net/npm/@mdi/svg@latest/svg/gitlab.svg" alt="Gitlab">
+        </a>
+      </li>
+    </ul>
+  </nav>
+</header>
+<!-- <main>
+  <h2>Project</h2>
+  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sapiente temporibus consequatur qui voluptate atque ratione suscipit quis magni tempora dolor voluptatibus rerum, odit quasi numquam reprehenderit expedita? Corrupti, libero consectetur.</p>
+</main> -->
 </body>
+<script>
+const navElem = document.querySelector('nav')
+for (var b of document.querySelectorAll('nav>ul>li>a')) {
+  const start = e => {
+    navElem.classList.add('tooltip')
+    navElem.dataset.tooltip = e.target.nodeName == 'IMG' ? e.target.alt : e.target.querySelector('img').alt
+  }
+  const end = e => {
+    navElem.classList.remove('tooltip')
+  }
+  b.addEventListener('mouseenter', start)
+  b.addEventListener('mouseleave', end)
+  b.addEventListener('touchstart', start)
+  b.addEventListener('touchend', end)
+}
+</script>
 </html>
